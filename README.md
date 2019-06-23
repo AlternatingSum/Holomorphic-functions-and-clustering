@@ -7,10 +7,12 @@ This program transforms one shape to another via a conformal mapping. It then me
 
 ## Tranforming shapes via conformal mappings
 
-
+![Transformed vases](https://i.imgur.com/s7FAmX5.png)
 
 ## Defining distance between shapes
 
 
 
 ## Clustering images by shape
+
+![Clustered vases](https://i.imgur.com/KIkO8Xa.jpg)
