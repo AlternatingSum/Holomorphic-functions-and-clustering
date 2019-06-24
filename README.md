@@ -11,7 +11,11 @@ If a planar shape is topologically equivalent to a disk (e.g. it doesn't have ho
 
 The program holomorphic_functions_and_clustering.py contains code to transform an image into a disk, using an iterative process similar to the one described in the proof of the Riemann mapping theorem. Here is the result of transforming an image of a vase via this process, after various numbers of iterations: 
 
+![Vase stretching](https://i.imgur.com/qRhAURn.png)
+
 ## Tranforming shapes via conformal mappings
+
+If we have conformal mappings from two different shapes to a disk, we can combine these functions to create a conformal mapping from one shape to another The program holomorphic_functions_and_clustering implements this as well, and given two images it can create a "shapeshifted" version of one image with the shape of the other. Here are examples of this: The top row shows three original images of vases, and the bottom two rows show images obtained by shapeshifting the original vases into each other. (Note: These images were created by an earlier version of this program by the same author. Precise shapeshifting benefits from precise identification of foregrounds, and to create these images we used hand labeled foreground pixels. The current program uses automatic foreground detection, but is less precise.) 
 
 ![Transformed vases](https://i.imgur.com/s7FAmX5.png)
 
