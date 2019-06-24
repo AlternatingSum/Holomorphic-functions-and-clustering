@@ -21,8 +21,14 @@ If we have conformal mappings from two different shapes to a disk, we can combin
 
 ## Defining distance between shapes
 
-
+Since we can now transform one shape into another in an angle-preserving way, we can now define a "distance" on the space of shapes. To find the distance between two shapes we first construct a conformal mapping between them (choosing one which preserves top, bottom, and vertical center of mass, to avoid ambiguity). We may then consider how much stretching is happening at each point to accomplish this. If the shapes are very different this will require a lot of stretching, and if they're very similar it may not require much stretching at all. By adding up the local stretching factors at each point in a mesh we arrive at a number representing the distance between the two shapes. 
 
 ## Clustering images by shape
 
+Since we have a notion of distance on the space of shapes, given a collection of shapes we can now categorize them using hierarchical clustering. To test this, we gave the program ten images of vases which a human might organize into three different styles. The program correctly arrived at the same three categories: 
+
 ![Clustered vases](https://i.imgur.com/KIkO8Xa.jpg)
+
+The results weren't perfect, however, and adding the following two vases (which a human might place in the third cluster) resulted in a different partition into clusters: 
+
+![Troublesome vases](https://i.imgur.com/KPYBlGG.jpg)
